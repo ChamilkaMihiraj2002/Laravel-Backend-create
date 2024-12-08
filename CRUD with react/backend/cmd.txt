@@ -1,0 +1,58 @@
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan make:migration create_product_table
+
+   INFO  Migration [E:\Study\Self - Programming\Laraval\p1\laravel-app\database\migrations/2024_12_06_090453_create_product_table.php] created succe
+ssfully.
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan migrate
+
+   INFO  Running migrations.
+
+  2024_12_06_090453_create_product_table ........................................................................................... 161.96ms DONE
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan make:model Product
+
+   INFO  Model [E:\Study\Self - Programming\Laraval\p1\laravel-app\app\Models\Product.php] created successfully.
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan make:controller Api/ProductController
+
+   INFO  Controller [E:\Study\Self - Programming\Laraval\p1\laravel-app\app\Http\Controllers\Api\ProductController.php] created successfully.
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan route:list
+
+  GET|HEAD        / ..............................................................................................................................
+  GET|HEAD        api/products ...................................................................... products.index › Api\ProductController@index
+  POST            api/products ...................................................................... products.store › Api\ProductController@store
+  GET|HEAD        api/products/{product} .............................................................. products.show › Api\ProductController@show
+  PUT|PATCH       api/products/{product} .......................................................... products.update › Api\ProductController@update
+  DELETE          api/products/{product} ........................................................ products.destroy › Api\ProductController@destroy
+  GET|HEAD        api/user .......................................................................................................................
+  GET|HEAD        sanctum/csrf-cookie .......................................... sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+  GET|HEAD        storage/{path} ................................................................................................... storage.local
+  GET|HEAD        up .............................................................................................................................
+
+                                                                                                                               Showing [10] routes
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan make:resource ProductResource
+
+   INFO  Resource [E:\Study\Self - Programming\Laraval\p1\laravel-app\app\Http\Resources\ProductResource.php] created successfully.
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$ php artisan migrate
+
+   INFO  Nothing to migrate.
+
+
+ASUS@LAPTOP-ROP5S6MJ MINGW64 /e/Study/Self - Programming/Laraval/p1/laravel-app
+$
